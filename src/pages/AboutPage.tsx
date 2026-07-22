@@ -16,7 +16,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking }) => {
         title="About Jokulu Cleaning Services"
         highlightText="Nakuru"
         subtitle="The most trusted name in professional residential, commercial, and industrial hygiene across Nakuru CBD, Milimani, Kiamunyi, Naivasha, and Gilgil."
-        backgroundImageUrl="/images/about-hero.jpg"
+        backgroundImageUrl="/images/about/about-hero.jpg"
         primaryCta={{
           text: "Book Appointment Now",
           onClick: onOpenBooking,

@@ -28,7 +28,7 @@ export const LocationSection: React.FC<LocationSectionProps> = ({
           title="Cleaning Services Across All Nakuru"
           highlightText="Sub-Counties"
           subtitle="Dedicated mobile units equipped for fast dispatch to your estate or town. Select your neighborhood below to view local delivery times & reviews."
-          backgroundImageUrl="/images/locations-hero.jpg"
+          backgroundImageUrl="/images/locations/nakuru-cbd.jpg"
           stats={[
             { value: "10+", label: "Sub-Counties Covered" },
             { value: "30 Mins", label: "Average Dispatch" },

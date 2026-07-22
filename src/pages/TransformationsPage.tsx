@@ -15,7 +15,7 @@ export const TransformationsPage: React.FC<TransformationsPageProps> = ({ onOpen
         title="Before & After"
         highlightText=""
         subtitle="See how our industrial steam extraction units and rotary deep scrubbers remove stubborn red clay soil, coffee spills, and dust from Nakuru homes."
-        backgroundImageUrl="/images/transformations-hero.jpg"
+        backgroundImageUrl="/images/transformations/sofa-after.jpg"
         primaryCta={{
           text: "Book Your Cleaning",
           onClick: onOpenBooking,

@@ -77,7 +77,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
           title="Our Professional Services in"
           highlightText="Nakuru"
           subtitle="Equipped with industrial hot water steam extractors, rotary scrubbers, and eco-certified chemicals. Fixed KSh prices with zero hidden charges."
-          backgroundImageUrl="/images/services-hero.jpg"
+          backgroundImageUrl="/images/services/residential-deep.jpg"
           stats={[
             { value: "14+", label: "Specialized Services" },
             { value: "30 Mins", label: "Express Dispatch" },

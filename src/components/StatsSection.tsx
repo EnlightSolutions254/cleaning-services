@@ -36,8 +36,17 @@ export const StatsSection: React.FC = () => {
   ];
 
   return (
-    <section className="py-12 bg-white border-b border-slate-200/70">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="relative py-12 bg-white border-b border-slate-200/70 overflow-hidden">
+      {/* Background Stats Image with Soft Overlay */}
+      <div className="absolute inset-0 z-0 opacity-10">
+        <img
+          src="/images/home/stats-bg.jpg"
+          alt="Jokulu Cleaning Stats Background"
+          referrerPolicy="no-referrer"
+          className="w-full h-full object-cover object-center"
+        />
+      </div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
           initial="hidden"
           whileInView="visible"

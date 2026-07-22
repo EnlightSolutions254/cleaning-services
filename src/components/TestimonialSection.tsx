@@ -44,7 +44,7 @@ export const TestimonialSection: React.FC = () => {
           title="What Nakuru Residents & Business Owners"
           highlightText="Say"
           subtitle="Read authentic, verified testimonials from homeowners, Airbnb Superhosts, and corporate managers across Nakuru County."
-          backgroundImageUrl="/images/reviews-hero.jpg"
+          backgroundImageUrl="/images/about/team-office.jpg"
           primaryCta={{
             text: "Leave Your Review",
             onClick: () => setShowAddReview(true),

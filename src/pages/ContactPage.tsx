@@ -30,7 +30,7 @@ export const ContactPage: React.FC = () => {
         title="Contact Jokulu Cleaning Services"
         highlightText="Nakuru"
         subtitle="Reach our Nakuru dispatch center 7 days a week. We respond within 5 minutes on WhatsApp or phone."
-        backgroundImageUrl="/images/contact-hero.jpg"
+        backgroundImageUrl="/images/about/team-office.jpg"
         primaryCta={{
           text: "WhatsApp Us Now",
           onClick: handleWhatsAppClick,

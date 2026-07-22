@@ -23,7 +23,7 @@ export const BlogSection: React.FC = () => {
           title="Expert Cleaning Tips & Local"
           highlightText="Guides"
           subtitle="Learn how to protect your furniture from volcanic dust, tackle red clay stains, and maintain 5-star Airbnb cleanliness in Nakuru."
-          backgroundImageUrl="/images/blog-hero.jpg"
+          backgroundImageUrl="/images/blog/sofa-care-guide.jpg"
           stats={[
             { value: "50+", label: "Articles & Guides" },
             { value: "Nakuru", label: "Local Focus" },

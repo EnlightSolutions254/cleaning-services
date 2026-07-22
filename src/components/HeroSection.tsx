@@ -69,7 +69,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
       {/* Background Hero Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/images/home-hero.jpg"
+          src="/images/home/hero-banner.jpg"
           alt="Apex Clean Nakuru Home Hero"
           referrerPolicy="no-referrer"
           className="w-full h-full object-cover object-center opacity-25 mix-blend-overlay"
@@ -211,7 +211,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 className="relative rounded-[24px] overflow-hidden border border-zinc-700/80 shadow-2xl bg-zinc-900 p-2"
               >
                 <img
-                  src="/images/home-hero.jpg"
+                  src="/images/home/hero-cleaner.jpg"
                   alt="Apex Clean Nakuru Professional Team Cleaning Luxury Mansion"
                   referrerPolicy="no-referrer"
                   className="w-full h-[440px] object-cover rounded-[18px]"

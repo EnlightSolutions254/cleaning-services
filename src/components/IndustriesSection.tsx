@@ -25,7 +25,7 @@ export const IndustriesSection: React.FC<IndustriesSectionProps> = ({ onSelectIn
           title="Specialized Cleaning Solutions for Nakuru"
           highlightText="Industries"
           subtitle="From luxury resorts on Lake Naivasha to corporate head offices in Nakuru CBD and private schools in Kiamunyi."
-          backgroundImageUrl="/images/industries-hero.jpg"
+          backgroundImageUrl="/images/industries/offices.jpg"
           stats={[
             { value: "500+", label: "Corporate Contracts" },
             { value: "100%", label: "OSHA Compliant" },

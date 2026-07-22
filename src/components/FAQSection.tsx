@@ -15,7 +15,7 @@ export const FAQSection: React.FC = () => {
           title="Frequently Asked"
           highlightText="Questions"
           subtitle="Everything you need to know about our cleaning process, staff vetting, and M-Pesa payments in Nakuru County."
-          backgroundImageUrl="/images/faq-hero.jpg"
+          backgroundImageUrl="/images/about/about-hero.jpg"
           stats={[
             { value: "100%", label: "DCI Vetted Staff" },
             { value: "M-Pesa", label: "Instant Payment" },
