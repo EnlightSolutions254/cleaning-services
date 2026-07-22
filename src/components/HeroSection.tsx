@@ -72,9 +72,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           src="/images/home/hero-banner.jpg"
           alt="Apex Clean Nakuru Home Hero"
           referrerPolicy="no-referrer"
-          className="w-full h-full object-cover object-center opacity-8 mix-blend-overlay"
+          className="w-full h-full object-cover object-center opacity-75 brightness-100"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#18181B] via-[#18181B]/95 to-[#18181B]/80" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#18181B]/85 via-[#18181B]/55 to-[#18181B]/20" />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -214,7 +214,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                   src="/images/home/hero-cleaner.jpg"
                   alt="Apex Clean Nakuru Professional Team Cleaning Luxury Mansion"
                   referrerPolicy="no-referrer"
-                  className="w-full h-[440px] object-cover rounded-[18px] opacity-90 hover:opacity-100 transition-opacity duration-300"
+                  className="w-full h-[440px] object-cover rounded-[18px] opacity-100 transition-opacity duration-300"
                   loading="eager"
                 />
 

@@ -50,9 +50,9 @@ export const PageHero: React.FC<PageHeroProps> = ({
           src={backgroundImageUrl}
           alt={title}
           referrerPolicy="no-referrer"
-          className="w-full h-full object-cover object-center opacity-10 mix-blend-overlay scale-105 transition-transform duration-1000"
+          className="w-full h-full object-cover object-center opacity-80 brightness-100 scale-105 transition-transform duration-1000"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#18181B]/95 via-[#18181B]/85 to-[#18181B]/60" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#18181B]/85 via-[#18181B]/55 to-[#18181B]/20" />
       </div>
 
       {/* Hero Content Container */}
