@@ -21,15 +21,17 @@ export const Navbar: React.FC<NavbarProps> = ({
     { label: 'Home', path: '/' },
     { label: 'Services', path: '/services' },
     { label: 'Calculator', path: '/calculator' },
-    { label: 'Before & After', path: '/transformations' },
+    { label: 'Before & After', path: '/transformations', hideOnDesktop: true },
     { label: 'Locations', path: '/locations' },
-    { label: 'Industries', path: '/industries' },
+    { label: 'Industries', path: '/industries', hideOnDesktop: true },
     { label: 'About', path: '/about' },
-    { label: 'Reviews', path: '/reviews' },
+    { label: 'Reviews', path: '/reviews', hideOnDesktop: true },
     { label: 'Blog', path: '/blog' },
-    { label: 'FAQ', path: '/faq' },
+    { label: 'FAQ', path: '/faq', hideOnDesktop: true },
     { label: 'Contact', path: '/contact' },
   ];
+
+  const desktopNavLinks = navLinks.filter((link) => !link.hideOnDesktop);
 
   const handleWhatsAppClick = () => {
     const text = encodeURIComponent(`Jambo ${APEX_COMPANY_INFO.name}! I would like to inquire about cleaning services in Nakuru County.`);
@@ -91,13 +93,13 @@ export const Navbar: React.FC<NavbarProps> = ({
         </Link>
 
         {/* Desktop Nav Links */}
-        <nav className="hidden xl:flex items-center gap-1.5">
-          {navLinks.map((link) => (
+        <nav className="hidden lg:flex items-center gap-1 xl:gap-2">
+          {desktopNavLinks.map((link) => (
             <NavLink
               key={link.label}
               to={link.path}
               className={({ isActive }) =>
-                `text-xs font-semibold transition-all py-2 px-3 rounded-[12px] ${
+                `text-xs font-semibold transition-all py-2 px-2.5 xl:px-3 rounded-[12px] whitespace-nowrap ${
                   isActive
                     ? 'text-[#059669] bg-emerald-50/80 font-bold'
                     : 'text-zinc-600 hover:text-[#18181B] hover:bg-zinc-100/80'
@@ -136,7 +138,7 @@ export const Navbar: React.FC<NavbarProps> = ({
         {/* Mobile Menu Button */}
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="xl:hidden p-2 rounded-[12px] text-zinc-700 hover:bg-zinc-100 transition-colors"
+          className="lg:hidden p-2 rounded-[12px] text-zinc-700 hover:bg-zinc-100 transition-colors"
           aria-label="Toggle navigation menu"
         >
           {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -145,7 +147,7 @@ export const Navbar: React.FC<NavbarProps> = ({
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="xl:hidden bg-white/95 backdrop-blur-xl border-b border-zinc-200 px-4 pt-3 pb-6 space-y-3 animate-in slide-in-from-top duration-200 shadow-xl">
+        <div className="lg:hidden bg-white/95 backdrop-blur-xl border-b border-zinc-200 px-4 pt-3 pb-6 space-y-3 animate-in slide-in-from-top duration-200 shadow-xl">
           <div className="flex flex-col gap-1 pb-2">
             {navLinks.map((link) => (
               <NavLink
